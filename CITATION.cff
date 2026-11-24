@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite the paper."
+title: "Replication package for: The Global Gender Gap in STEM Applications: Pipeline vs. Choice"
+type: software
+license: MIT
+version: "1.0"
+date-released: "2026-11-23"
+authors:
+  - {family-names: Ahimbisibwe, given-names: Isaac}
+  - {family-names: Altmejd, given-names: Adam}
+  - {family-names: Artemov, given-names: Georgy}
+  - {family-names: Barrios-Fernández, given-names: Andrés}
+  - {family-names: Bizopoulou, given-names: Aspasia}
+  - {family-names: Kaila, given-names: Martti}
+  - {family-names: Liu, given-names: Jin-Tan}
+  - {family-names: Megalokonomou, given-names: Rigissa}
+  - {family-names: Montalbán, given-names: José}
+  - {family-names: Neilson, given-names: Christopher}
+  - {family-names: Otero, given-names: Sebastián}
+  - {family-names: Sun, given-names: Jintao}
+  - {family-names: Ye, given-names: Xiaoyang}
+preferred-citation:
+  type: report
+  title: "The Global Gender Gap in STEM Applications: Pipeline vs. Choice"
+  authors:
+    - {family-names: Ahimbisibwe, given-names: Isaac}
+    - {family-names: Altmejd, given-names: Adam}
+    - {family-names: Artemov, given-names: Georgy}
+    - {family-names: Barrios-Fernández, given-names: Andrés}
+    - {family-names: Bizopoulou, given-names: Aspasia}
+    - {family-names: Kaila, given-names: Martti}
+    - {family-names: Liu, given-names: Jin-Tan}
+    - {family-names: Megalokonomou, given-names: Rigissa}
+    - {family-names: Montalbán, given-names: José}
+    - {family-names: Neilson, given-names: Christopher}
+    - {family-names: Otero, given-names: Sebastián}
+    - {family-names: Sun, given-names: Jintao}
+    - {family-names: Ye, given-names: Xiaoyang}
+  institution:
+    name: "ConsiliumBots"
+  collection-title: "ConsiliumBots Working Papers"
+  number: "03"
+  year: 2026
+  url: "https://consiliumbots.github.io/working-papers-cb/stem_gender_gaps/"

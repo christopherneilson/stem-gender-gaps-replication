@@ -1,0 +1,17 @@
+outcome,definition
+pipeline_total,Total students in score group (denominator for pipeline composition)
+stem_first,Students ranking a STEM program first
+stem_any,Students ranking at least one STEM program anywhere in list
+stem_admitted,Students admitted to a STEM program
+health_first,Students ranking a Health program first
+health_any,Students ranking at least one Health program anywhere in list
+health_admitted,Students admitted to a Health program
+business_first,Students ranking a Business/Law program first
+business_any,Students ranking at least one Business/Law program anywhere in list
+business_admitted,Students admitted to a Business/Law program
+stem_engit_first,Students ranking engineering/IT STEM first (subset)
+stem_engit_any,Students ranking engineering/IT STEM anywhere (subset)
+stem_engit_admitted,Students admitted to engineering/IT STEM (subset)
+stem_other_first,Students ranking non-eng/IT STEM first (subset)
+stem_other_any,Students ranking non-eng/IT STEM anywhere (subset)
+stem_other_admitted,Students admitted to non-eng/IT STEM (subset)

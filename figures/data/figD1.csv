@@ -1,0 +1,31 @@
+x,series,y,ci_lo,ci_hi,n_obs,years_used
+Australia,pipeline gap,9.2952,,,3916,2010
+Australia,STEM first-choice gap,-16.2339,,,3916,2010
+Australia,any-STEM gap,-16.6822,,,3916,2010
+Brazil,pipeline gap,-1.1994,,,271049,2016
+Brazil,STEM first-choice gap,-20.1519,,,271049,2016
+Brazil,any-STEM gap,-22.7099,,,271049,2016
+Chile,pipeline gap,-6.6794,,,26140,2018
+Chile,STEM first-choice gap,-22.1291,,,26140,2018
+Chile,any-STEM gap,-22.2539,,,26140,2018
+China,pipeline gap,10.6669,,,5203,2018
+China,STEM first-choice gap,-36.4915,,,5203,2018
+China,any-STEM gap,-26.4042,,,5203,2018
+Finland,pipeline gap,4.3353,,,6920,2018
+Finland,STEM first-choice gap,-26.1373,,,6920,2018
+Finland,any-STEM gap,-21.5952,,,6920,2018
+Greece,pipeline gap,22.1139,,,68007,2003--2012 (pooled)
+Greece,STEM first-choice gap,-22.5303,,,68007,2003--2012 (pooled)
+Greece,any-STEM gap,-24.9786,,,68007,2003--2012 (pooled)
+Spain,pipeline gap,24.6253,,,20418,2020
+Spain,STEM first-choice gap,-28.105,,,20418,2020
+Spain,any-STEM gap,-27.3667,,,20418,2020
+Sweden,pipeline gap,31.7159,,,10758,2017
+Sweden,STEM first-choice gap,-26.2802,,,10758,2017
+Sweden,any-STEM gap,-27.3174,,,10758,2017
+Taiwan,pipeline gap,-20.9488,,,6998,2010
+Taiwan,STEM first-choice gap,-24.7297,,,6998,2010
+Taiwan,any-STEM gap,-8.6941,,,6998,2010
+Uganda,pipeline gap,-22.7487,,,3187,2017/2018
+Uganda,STEM first-choice gap,-11.4875,,,3187,2017/2018
+Uganda,any-STEM gap,-9.4282,,,3187,2017/2018

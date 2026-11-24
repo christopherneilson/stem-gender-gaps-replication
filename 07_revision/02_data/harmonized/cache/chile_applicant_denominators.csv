@@ -1,0 +1,28 @@
+# Chile denominators restricted to students with at least one submitted college application
+# (applies_university == 1). Score groups remain defined on the full score-holder distribution.
+#
+# Needed because create_data_chile.do drops applies_university in its collapses, so the six
+# summary .dta files cannot express it; the figure scripts therefore read the student-level
+# chile_gender_analysis.dta from a Dropbox folder only some coauthors have mounted. Without a
+# fallback the restriction is skipped silently and Chile reverts to score-holder denominators.
+#
+# Deciles 1-10: exact, from figures/chile_stem_first_decile_all_vs_applicants.csv, produced by
+#   scripts/chile_applicant_conditioning_check.py against the student-level file on a mounted
+#   machine (committed 2026-07-27).
+# Top 5%: RECONSTRUCTED, not measured. Recovered by inverting Chile's labels in the figure panels
+#   committed at d176400 (2026-07-03), the last build made with the file mounted. Three outcomes
+#   pin the same pair: stem_first 46.2/22.0, stem_any 59.3/35.9, stem_admitted 46.6/23.3, giving
+#   male in [48801, 48828] and female in [34816, 34862]. Every displayed figure value reproduces
+#   exactly, but replace this row with the measured counts when the source file is available.
+score_group,male,female,provenance
+Decile 1,3263,7483,exact
+Decile 2,6200,13766,exact
+Decile 3,10679,21098,exact
+Decile 4,17480,30659,exact
+Decile 5,32061,48846,exact
+Decile 6,44913,62601,exact
+Decile 7,56820,71645,exact
+Decile 8,67086,75426,exact
+Decile 9,78122,78612,exact
+Decile 10,92306,73118,exact
+Top 5%,48814,34839,reconstructed

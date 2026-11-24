@@ -1,0 +1,11 @@
+x,series,y,ci_lo,ci_hi,n_obs,threshold,outcome,denominator
+Taiwan,female minus male,20.652,,,6998.0,Top 10%,business_any,all in score group
+Chile,female minus male,-3.9779,,,174020.0,Top 10%,business_any,applicants only
+Brazil,female minus male,-1.6185,,,271049.0,Top 10%,business_any,all in score group
+China,female minus male,28.318,,,5203.0,Top 10%,business_any,all in score group
+Uganda,female minus male,12.0911,,,3187.0,Top 10%,business_any,all in score group
+Finland,female minus male,-5.1246,,,34585.0,Top 10%,business_any,all in score group
+Spain,female minus male,4.3242,,,85691.0,Top 10%,business_any,all in score group
+Australia,female minus male,-18.1264,,,7748.0,Top 10%,business_any,all in score group
+Greece,female minus male,,,,,Top 10%,business_any,all in score group
+Sweden,female minus male,3.7232,,,10758.0,Top 10%,business_any,all in score group

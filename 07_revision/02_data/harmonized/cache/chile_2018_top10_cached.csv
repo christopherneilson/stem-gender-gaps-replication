@@ -1,0 +1,10 @@
+# Chile 2018 top-10 counts used by Online Appendix D.
+# Snapshot of the values produced by create_appendix_d_recent_figures.py when the
+# raw yearly summaries (chile_pipeline_by_decile_gender.dta / chile_outcomes_by_decile_gender.dta,
+# year == 2018, score_decile == 10) were readable, as committed in d176400 on 2026-07-03.
+# Same purpose as chile_rows_cached.csv: those .dta files live in a Dropbox folder that only
+# some coauthors have mounted, and without a fallback Chile silently reverts to the pooled
+# 2012-2018 window -- the main-text sample, which contributes nothing to this appendix.
+# Refresh from source whenever the yearly summaries are available.
+pipe_m,pipe_f,first_m,first_f,any_m,any_f
+13943,12197,5741,2323,7560,3899

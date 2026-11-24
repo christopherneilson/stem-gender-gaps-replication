@@ -1,0 +1,21 @@
+x,series,y,ci_lo,ci_hi,n_obs,score_group,derivation
+Taiwan,all applicants,29.8672,,,27187,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Taiwan,top 10% of scorers,31.1179,,,4920,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Chile,all applicants,28.3475,,,230553,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Chile,top 10% of scorers,26.6217,,,57115,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Brazil,all applicants,38.8366,,,611887,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Brazil,top 10% of scorers,32.6081,,,81308,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+China,all applicants,30.5335,,,18501,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+China,top 10% of scorers,29.7327,,,1833,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Uganda,all applicants,27.8559,,,9384,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Uganda,top 10% of scorers,32.0755,,,1325,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Finland,all applicants,31.1699,,,63186,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Finland,top 10% of scorers,32.9194,,,12078,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Spain,all applicants,34.1775,,,238733,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Spain,top 10% of scorers,42.8538,,,29897,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Australia,all applicants,33.9196,,,16374,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Australia,top 10% of scorers,41.6279,,,2580,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Greece,all applicants,34.3809,,,193145,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Greece,top 10% of scorers,45.3412,,,23182,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant
+Sweden,all applicants,28.894,,,21482,All deciles,female stem_first count / total stem_first count summed over deciles 1-10 of the preferred sample variant
+Sweden,top 10% of scorers,43.7847,,,2880,Decile 10,female stem_first count / total stem_first count in decile 10 of the preferred sample variant

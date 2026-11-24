@@ -1,0 +1,11 @@
+x,series,y,ci_lo,ci_hi,n_obs,threshold
+Taiwan,female minus male,-18.1579,,,13311,Top 20%
+Chile,female minus male,-6.6198,,,348318,Top 20%
+Brazil,female minus male,-1.0642,,,542188,Top 20%
+China,female minus male,16.8727,,,10437,Top 20%
+Uganda,female minus male,-20.3679,,,5327,Top 20%
+Finland,female minus male,9.3348,,,69471,Top 20%
+Spain,female minus male,26.186,,,171412,Top 20%
+Australia,female minus male,11.7731,,,15476,Top 20%
+Greece,female minus male,20.3685,,,136009,Top 20%
+Sweden,female minus male,32.5786,,,21640,Top 20%

@@ -1,0 +1,21 @@
+x,series,y,ci_lo,ci_hi,n_obs,threshold,outcome,denominator,n_outcome
+Taiwan,male,48.97,,,7864.0,Top 20%,business_any,all in score group,3851.0
+Taiwan,female,70.9014,,,5447.0,Top 20%,business_any,all in score group,3862.0
+Chile,male,27.5397,,,185688.0,Top 20%,business_any,applicants only,51138.0
+Chile,female,23.2085,,,162630.0,Top 20%,business_any,applicants only,37744.0
+Brazil,male,21.3104,,,273979.0,Top 20%,business_any,all in score group,58386.0
+Brazil,female,20.1138,,,268209.0,Top 20%,business_any,all in score group,53947.0
+China,male,64.4076,,,4338.0,Top 20%,business_any,all in score group,2794.0
+China,female,85.801,,,6099.0,Top 20%,business_any,all in score group,5233.0
+Uganda,male,21.2102,,,3206.0,Top 20%,business_any,all in score group,680.0
+Uganda,female,37.388,,,2121.0,Top 20%,business_any,all in score group,793.0
+Finland,male,22.9607,,,31493.0,Top 20%,business_any,all in score group,7231.0
+Finland,female,16.3911,,,37978.0,Top 20%,business_any,all in score group,6225.0
+Spain,male,14.1852,,,63263.0,Top 20%,business_any,all in score group,8974.0
+Spain,female,17.8134,,,108149.0,Top 20%,business_any,all in score group,19265.0
+Australia,male,53.4788,,,6827.0,Top 20%,business_any,all in score group,3651.0
+Australia,female,35.9464,,,8649.0,Top 20%,business_any,all in score group,3109.0
+Greece,male,,,,,Top 20%,business_any,all in score group,
+Greece,female,,,,,Top 20%,business_any,all in score group,
+Sweden,male,33.7217,,,7295.0,Top 20%,business_any,all in score group,2460.0
+Sweden,female,37.3998,,,14345.0,Top 20%,business_any,all in score group,5365.0

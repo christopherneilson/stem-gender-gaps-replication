@@ -1,0 +1,4 @@
+# Text files are stored and checked out with LF so run_all.py's comparison and
+# MANIFEST.sha256 hold on every platform.
+* text=auto eol=lf
+*.pdf binary

@@ -1,0 +1,41 @@
+x,series,y,ci_lo,ci_hi,n_obs,sex,outcome,threshold
+Taiwan,female / STEM first,31.5058,,,2663,female,stem_first,Top 5%
+Taiwan,male / STEM first,68.4942,,,2663,male,stem_first,Top 5%
+Chile,female / STEM first,25.4113,,,30211,female,stem_first,Top 5%
+Chile,male / STEM first,74.5887,,,30211,male,stem_first,Top 5%
+Brazil,female / STEM first,32.4231,,,38744,female,stem_first,Top 5%
+Brazil,male / STEM first,67.5769,,,38744,male,stem_first,Top 5%
+China,female / STEM first,27.4118,,,850,female,stem_first,Top 5%
+China,male / STEM first,72.5882,,,850,male,stem_first,Top 5%
+Uganda,female / STEM first,30.506,,,672,female,stem_first,Top 5%
+Uganda,male / STEM first,69.494,,,672,male,stem_first,Top 5%
+Finland,female / STEM first,32.2481,,,6143,female,stem_first,Top 5%
+Finland,male / STEM first,67.7519,,,6143,male,stem_first,Top 5%
+Spain,female / STEM first,42.8154,,,18811,female,stem_first,Top 5%
+Spain,male / STEM first,57.1846,,,18811,male,stem_first,Top 5%
+Australia,female / STEM first,41.1947,,,1289,female,stem_first,Top 5%
+Australia,male / STEM first,58.8053,,,1289,male,stem_first,Top 5%
+Greece,female / STEM first,52.9617,,,13202,female,stem_first,Top 5%
+Greece,male / STEM first,47.0383,,,13202,male,stem_first,Top 5%
+Sweden,female / STEM first,46.6972,,,1529,female,stem_first,Top 5%
+Sweden,male / STEM first,53.3028,,,1529,male,stem_first,Top 5%
+Taiwan,female / Any STEM in list,36.2651,,,3229,female,stem_any,Top 5%
+Taiwan,male / Any STEM in list,63.7349,,,3229,male,stem_any,Top 5%
+Chile,female / Any STEM in list,30.1476,,,41456,female,stem_any,Top 5%
+Chile,male / Any STEM in list,69.8524,,,41456,male,stem_any,Top 5%
+Brazil,female / Any STEM in list,34.2031,,,48902,female,stem_any,Top 5%
+Brazil,male / Any STEM in list,65.7969,,,48902,male,stem_any,Top 5%
+China,female / Any STEM in list,41.71,,,1731,female,stem_any,Top 5%
+China,male / Any STEM in list,58.29,,,1731,male,stem_any,Top 5%
+Uganda,female / Any STEM in list,35.6679,,,1385,female,stem_any,Top 5%
+Uganda,male / Any STEM in list,64.3321,,,1385,male,stem_any,Top 5%
+Finland,female / Any STEM in list,40.2663,,,9313,female,stem_any,Top 5%
+Finland,male / Any STEM in list,59.7337,,,9313,male,stem_any,Top 5%
+Spain,female / Any STEM in list,43.5765,,,19125,female,stem_any,Top 5%
+Spain,male / Any STEM in list,56.4235,,,19125,male,stem_any,Top 5%
+Australia,female / Any STEM in list,46.2648,,,2704,female,stem_any,Top 5%
+Australia,male / Any STEM in list,53.7352,,,2704,male,stem_any,Top 5%
+Greece,female / Any STEM in list,55.9004,,,24100,female,stem_any,Top 5%
+Greece,male / Any STEM in list,44.0996,,,24100,male,stem_any,Top 5%
+Sweden,female / Any STEM in list,50.3448,,,2030,female,stem_any,Top 5%
+Sweden,male / Any STEM in list,49.6552,,,2030,male,stem_any,Top 5%

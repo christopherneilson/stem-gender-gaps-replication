@@ -1,0 +1,61 @@
+x,series,y,ci_lo,ci_hi,n_obs,denominator
+1-5,Taiwan,-25.8952,,,36142,all in score bin
+6,Taiwan,-31.8122,,,7483,all in score bin
+7,Taiwan,-30.6589,,,6870,all in score bin
+8,Taiwan,-31.8119,,,8261,all in score bin
+9,Taiwan,-32.3768,,,6313,all in score bin
+10,Taiwan,-24.7297,,,6998,all in score bin
+1-5,Chile,-25.548,,,191535,applicants only
+6,Chile,-26.3497,,,107514,applicants only
+7,Chile,-26.6478,,,128465,applicants only
+8,Chile,-26.5525,,,142512,applicants only
+9,Chile,-25.3963,,,156734,applicants only
+10,Chile,-24.6082,,,165424,applicants only
+1-5,Brazil,-14.3658,,,1355605,all in score bin
+6,Brazil,-16.1926,,,271170,all in score bin
+7,Brazil,-16.3712,,,271050,all in score bin
+8,Brazil,-17.5042,,,271036,all in score bin
+9,Brazil,-18.9224,,,271139,all in score bin
+10,Brazil,-20.1519,,,271049,all in score bin
+1-5,China (Ningxia),-35.7005,,,26231,all in score bin
+6,China (Ningxia),-32.7304,,,5301,all in score bin
+7,China (Ningxia),-37.2717,,,5289,all in score bin
+8,China (Ningxia),-39.5185,,,5169,all in score bin
+9,China (Ningxia),-40.011,,,5234,all in score bin
+10,China (Ningxia),-36.4915,,,5203,all in score bin
+1-5,Uganda,-14.1393,,,21439,all in score bin
+6,Uganda,-18.3775,,,3597,all in score bin
+7,Uganda,-22.1898,,,3204,all in score bin
+8,Uganda,-20.8426,,,2680,all in score bin
+9,Uganda,-21.3573,,,2140,all in score bin
+10,Uganda,-11.4875,,,3187,all in score bin
+1-5,Finland,-19.8458,,,174278,all in score bin
+6,Finland,-19.9025,,,34617,all in score bin
+7,Finland,-20.4074,,,34897,all in score bin
+8,Finland,-20.5875,,,34641,all in score bin
+9,Finland,-24.5048,,,34886,all in score bin
+10,Finland,-26.1763,,,34585,all in score bin
+1-5,Spain,-24.6392,,,429078,all in score bin
+6,Spain,-26.9219,,,85727,all in score bin
+7,Spain,-27.3547,,,85797,all in score bin
+8,Spain,-28.2455,,,85856,all in score bin
+9,Spain,-29.5727,,,85721,all in score bin
+10,Spain,-29.7229,,,85691,all in score bin
+1-5,Australia,-15.2574,,,38909,all in score bin
+6,Australia,-24.9597,,,7701,all in score bin
+7,Australia,-25.2966,,,7747,all in score bin
+8,Australia,-25.4086,,,7815,all in score bin
+9,Australia,-21.7479,,,7728,all in score bin
+10,Australia,-16.1201,,,7748,all in score bin
+1-5,Greece,-26.3513,,,340016,all in score bin
+6,Greece,-20.4222,,,68002,all in score bin
+7,Greece,-21.6234,,,68003,all in score bin
+8,Greece,-24.1807,,,68005,all in score bin
+9,Greece,-26.7033,,,68002,all in score bin
+10,Greece,-22.5303,,,68007,all in score bin
+1-5,Sweden,-23.3256,,,54132,all in score bin
+6,Sweden,-23.8639,,,10918,all in score bin
+7,Sweden,-24.9612,,,10750,all in score bin
+8,Sweden,-24.866,,,10797,all in score bin
+9,Sweden,-25.6372,,,10882,all in score bin
+10,Sweden,-26.2802,,,10758,all in score bin

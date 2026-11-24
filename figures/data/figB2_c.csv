@@ -1,0 +1,21 @@
+x,series,y,ci_lo,ci_hi,n_obs,threshold
+Taiwan,male,59.079,,,13311,Top 20%
+Taiwan,female,40.921,,,13311,Top 20%
+Chile,male,53.3099,,,348318,Top 20%
+Chile,female,46.6901,,,348318,Top 20%
+Brazil,male,50.5321,,,542188,Top 20%
+Brazil,female,49.4679,,,542188,Top 20%
+China,male,41.5637,,,10437,Top 20%
+China,female,58.4363,,,10437,Top 20%
+Uganda,male,60.184,,,5327,Top 20%
+Uganda,female,39.816,,,5327,Top 20%
+Finland,male,45.3326,,,69471,Top 20%
+Finland,female,54.6674,,,69471,Top 20%
+Spain,male,36.907,,,171412,Top 20%
+Spain,female,63.093,,,171412,Top 20%
+Australia,male,44.1135,,,15476,Top 20%
+Australia,female,55.8865,,,15476,Top 20%
+Greece,male,39.8157,,,136009,Top 20%
+Greece,female,60.1843,,,136009,Top 20%
+Sweden,male,33.7107,,,21640,Top 20%
+Sweden,female,66.2893,,,21640,Top 20%

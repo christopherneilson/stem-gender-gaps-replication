@@ -1,0 +1,13 @@
+column_name,type,required,description,example
+country,string,yes,Country name,Finland
+country_code,string,yes,Two-letter code used in project (lowercase),fi
+source_file,string,yes,Original file used to produce the row,fi_tables_main.xlsx
+source_format,string,yes,File format of source input,xlsx
+sample_variant,string,yes,Variant or period label of source,main_pooled
+score_group_label,string,yes,Raw group label as provided in source,Decile 10
+score_group_type,string,yes,Group type (decile|top_percent),decile
+score_group_value,number,yes,Decile number (1-10) or top threshold (1 or 5),10
+outcome,string,yes,Outcome represented by count,pipeline_total
+sex,string,yes,Sex category (male|female),female
+n,integer,yes,Count value,17859
+notes,string,no,Any harmonization caveat or transformation note,Parsed from BR-tab_decile.tex

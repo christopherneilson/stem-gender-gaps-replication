@@ -1,0 +1,21 @@
+x,series,y,ci_lo,ci_hi,n_obs,threshold,outcome,denominator,n_outcome
+Taiwan,male,75.2925,,,7864,Top 20%,stem_first,all in score group,5921
+Taiwan,female,46.4843,,,5447,Top 20%,stem_first,all in score group,2532
+Chile,male,44.1946,,,170428,Top 20%,stem_first,applicants only,75320
+Chile,female,19.0206,,,151730,Top 20%,stem_first,applicants only,28860
+Brazil,male,39.2384,,,273979,Top 20%,stem_first,all in score group,107505
+Brazil,female,19.7003,,,268209,Top 20%,stem_first,all in score group,52838
+China,male,57.6533,,,4338,Top 20%,stem_first,all in score group,2501
+China,female,19.6098,,,6099,Top 20%,stem_first,all in score group,1196
+Uganda,male,46.4754,,,3206,Top 20%,stem_first,all in score group,1490
+Uganda,female,30.8817,,,2121,Top 20%,stem_first,all in score group,655
+Finland,male,44.3273,,,31493,Top 20%,stem_first,all in score group,13960
+Finland,female,18.5028,,,37978,Top 20%,stem_first,all in score group,7027
+Spain,male,52.2422,,,63263,Top 20%,stem_first,all in score group,33050
+Spain,female,22.5763,,,108149,Top 20%,stem_first,all in score group,24416
+Australia,male,43.5623,,,6827,Top 20%,stem_first,all in score group,2974
+Australia,female,24.6734,,,8649,Top 20%,stem_first,all in score group,2134
+Greece,male,46.0658,,,54153,Top 20%,stem_first,all in score group,24946
+Greece,female,21.5427,,,81856,Top 20%,stem_first,all in score group,17634
+Sweden,male,41.6175,,,7295,Top 20%,stem_first,all in score group,3036
+Sweden,female,15.6152,,,14345,Top 20%,stem_first,all in score group,2240

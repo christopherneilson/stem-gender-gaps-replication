@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+# Intermediate and exploratory files the pipeline writes along the way; the
+# paper does not use them.
+07_revision/02_data/harmonized/figure_data/
+07_revision/02_data/harmonized/figures/bottom90_decile_country_stem_rates.*
+07_revision/02_data/harmonized/figures/threshold_robustness_choice_admission.*
+07_revision/02_data/harmonized/figures/top10_choice_probabilities_three_outcomes.*
+07_revision/02_data/harmonized/figures/top10_gender_shares_three_outcomes.*
+07_revision/02_data/harmonized/figures/top10_stem_vs_business_benchmark.*
+07_revision/02_data/harmonized/figures/top10_three_outcomes_metrics.csv

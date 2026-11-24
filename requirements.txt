@@ -1,0 +1,14 @@
+# Python 3.12. Versions are pinned exactly: the comparison in run_all.py is
+# exact, and other versions of pandas and matplotlib change the output files
+# even when every number is the same.
+#
+#   python -m venv .venv
+#   .venv/bin/pip install -r requirements.txt      (Windows: .venv\Scripts\pip)
+#
+# Figure PDFs also need Ghostscript on the PATH (gs, or gswin64c on Windows).
+pandas==3.0.5
+numpy==2.5.1
+matplotlib==3.11.1
+Jinja2==3.1.6
+svglib==2.2.0
+reportlab==5.0.1

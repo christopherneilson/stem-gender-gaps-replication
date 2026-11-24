@@ -1,0 +1,367 @@
+{
+  "method": "Unweighted OLS with intercept; conventional standard errors; residual df = n - 2",
+  "inputs": [
+    {
+      "country": "Australia",
+      "wage_parity": 0.885,
+      "pipeline_log": -0.146882,
+      "choice_log": 0.484949,
+      "pipeline_pp": 7.330924,
+      "choice_pp": -16.120135
+    },
+    {
+      "country": "Brazil",
+      "wage_parity": 0.90017,
+      "pipeline_log": 0.023989,
+      "choice_log": 0.701974,
+      "pipeline_pp": -1.199414,
+      "choice_pp": -20.151861
+    },
+    {
+      "country": "Chile",
+      "wage_parity": 0.8374,
+      "pipeline_log": 0.241974,
+      "choice_log": 0.771926,
+      "pipeline_pp": -12.039995,
+      "choice_pp": -24.608179
+    },
+    {
+      "country": "China",
+      "wage_parity": 0.786,
+      "pipeline_log": -0.214153,
+      "choice_log": 1.074213,
+      "pipeline_pp": 10.666923,
+      "choice_pp": -36.491503
+    },
+    {
+      "country": "Finland",
+      "wage_parity": 0.8319,
+      "pipeline_log": -0.065543,
+      "choice_log": 0.777378,
+      "pipeline_pp": 3.275987,
+      "choice_pp": -26.176271
+    },
+    {
+      "country": "Greece",
+      "wage_parity": 0.96521,
+      "pipeline_log": -0.449707,
+      "choice_log": 0.6366,
+      "pipeline_pp": 22.1139,
+      "choice_pp": -22.5303
+    },
+    {
+      "country": "Spain",
+      "wage_parity": 0.9412,
+      "pipeline_log": -0.522101,
+      "choice_log": 0.809919,
+      "pipeline_pp": 25.527768,
+      "choice_pp": -29.722912
+    },
+    {
+      "country": "Sweden",
+      "wage_parity": 0.9009,
+      "pipeline_log": -0.656971,
+      "choice_log": 0.906875,
+      "pipeline_pp": 31.715932,
+      "choice_pp": -26.280245
+    },
+    {
+      "country": "Taiwan",
+      "wage_parity": 0.838,
+      "pipeline_log": 0.425272,
+      "choice_log": 0.369341,
+      "pipeline_pp": -20.948843,
+      "choice_pp": -24.729653
+    },
+    {
+      "country": "Uganda",
+      "wage_parity": 0.51666,
+      "pipeline_log": 0.463075,
+      "choice_log": 0.287231,
+      "pipeline_pp": -22.748666,
+      "choice_pp": -11.487493
+    }
+  ],
+  "estimates": {
+    "pipeline_log": {
+      "all": {
+        "n": 10,
+        "slope": -2.053131,
+        "standard_error": 0.809887,
+        "t": -2.535084
+      },
+      "leave_one_out": {
+        "Australia": {
+          "n": 9,
+          "slope": -2.065551,
+          "standard_error": 0.871821,
+          "t": -2.369237
+        },
+        "Brazil": {
+          "n": 9,
+          "slope": -2.166867,
+          "standard_error": 0.839657,
+          "t": -2.580658
+        },
+        "Chile": {
+          "n": 9,
+          "slope": -2.045912,
+          "standard_error": 0.79458,
+          "t": -2.574834
+        },
+        "China": {
+          "n": 9,
+          "slope": -2.154812,
+          "standard_error": 0.83825,
+          "t": -2.570607
+        },
+        "Finland": {
+          "n": 9,
+          "slope": -2.052649,
+          "standard_error": 0.866005,
+          "t": -2.370251
+        },
+        "Greece": {
+          "n": 9,
+          "slope": -1.939106,
+          "standard_error": 0.915426,
+          "t": -2.118254
+        },
+        "Spain": {
+          "n": 9,
+          "slope": -1.861423,
+          "standard_error": 0.864852,
+          "t": -2.152302
+        },
+        "Sweden": {
+          "n": 9,
+          "slope": -1.838238,
+          "standard_error": 0.735691,
+          "t": -2.498657
+        },
+        "Taiwan": {
+          "n": 9,
+          "slope": -2.044214,
+          "standard_error": 0.677986,
+          "t": -3.015128
+        },
+        "Uganda": {
+          "n": 9,
+          "slope": -3.56311,
+          "standard_error": 1.908957,
+          "t": -1.866521
+        }
+      }
+    },
+    "choice_log": {
+      "all": {
+        "n": 10,
+        "slope": 0.835874,
+        "standard_error": 0.615659,
+        "t": 1.357691
+      },
+      "leave_one_out": {
+        "Australia": {
+          "n": 9,
+          "slope": 0.918823,
+          "standard_error": 0.61398,
+          "t": 1.496503
+        },
+        "Brazil": {
+          "n": 9,
+          "slope": 0.850339,
+          "standard_error": 0.666757,
+          "t": 1.275335
+        },
+        "Chile": {
+          "n": 9,
+          "slope": 0.837916,
+          "standard_error": 0.65096,
+          "t": 1.287201
+        },
+        "China": {
+          "n": 9,
+          "slope": 1.024842,
+          "standard_error": 0.469569,
+          "t": 2.182515
+        },
+        "Finland": {
+          "n": 9,
+          "slope": 0.84252,
+          "standard_error": 0.64944,
+          "t": 1.297303
+        },
+        "Greece": {
+          "n": 9,
+          "slope": 1.001767,
+          "standard_error": 0.678775,
+          "t": 1.475846
+        },
+        "Spain": {
+          "n": 9,
+          "slope": 0.798771,
+          "standard_error": 0.684114,
+          "t": 1.1676
+        },
+        "Sweden": {
+          "n": 9,
+          "slope": 0.751277,
+          "standard_error": 0.640493,
+          "t": 1.172967
+        },
+        "Taiwan": {
+          "n": 9,
+          "slope": 0.830448,
+          "standard_error": 0.570801,
+          "t": 1.454881
+        },
+        "Uganda": {
+          "n": 9,
+          "slope": -0.852742,
+          "standard_error": 1.355304,
+          "t": -0.629189
+        }
+      }
+    },
+    "pipeline_pp": {
+      "all": {
+        "n": 10,
+        "slope": 100.529949,
+        "standard_error": 39.619131,
+        "t": 2.537409
+      },
+      "leave_one_out": {
+        "Australia": {
+          "n": 9,
+          "slope": 101.073917,
+          "standard_error": 42.656795,
+          "t": 2.369468
+        },
+        "Brazil": {
+          "n": 9,
+          "slope": 106.090447,
+          "standard_error": 41.077781,
+          "t": 2.582672
+        },
+        "Chile": {
+          "n": 9,
+          "slope": 100.173166,
+          "standard_error": 38.794971,
+          "t": 2.582117
+        },
+        "China": {
+          "n": 9,
+          "slope": 105.6052,
+          "standard_error": 40.929247,
+          "t": 2.580189
+        },
+        "Finland": {
+          "n": 9,
+          "slope": 100.51341,
+          "standard_error": 42.365257,
+          "t": 2.372543
+        },
+        "Greece": {
+          "n": 9,
+          "slope": 94.795356,
+          "standard_error": 44.758804,
+          "t": 2.117915
+        },
+        "Spain": {
+          "n": 9,
+          "slope": 91.137995,
+          "standard_error": 42.302515,
+          "t": 2.154434
+        },
+        "Sweden": {
+          "n": 9,
+          "slope": 90.206922,
+          "standard_error": 36.262066,
+          "t": 2.487639
+        },
+        "Taiwan": {
+          "n": 9,
+          "slope": 100.091848,
+          "standard_error": 33.077387,
+          "t": 3.02599
+        },
+        "Uganda": {
+          "n": 9,
+          "slope": 174.028535,
+          "standard_error": 93.435914,
+          "t": 1.862544
+        }
+      }
+    },
+    "choice_pp": {
+      "all": {
+        "n": 10,
+        "slope": -23.099089,
+        "standard_error": 17.720344,
+        "t": -1.303535
+      },
+      "leave_one_out": {
+        "Australia": {
+          "n": 9,
+          "slope": -26.191859,
+          "standard_error": 16.639387,
+          "t": -1.574088
+        },
+        "Brazil": {
+          "n": 9,
+          "slope": -25.527103,
+          "standard_error": 18.413068,
+          "t": -1.386358
+        },
+        "Chile": {
+          "n": 9,
+          "slope": -23.117765,
+          "standard_error": 18.92353,
+          "t": -1.221641
+        },
+        "China": {
+          "n": 9,
+          "slope": -29.109007,
+          "standard_error": 11.911342,
+          "t": -2.443806
+        },
+        "Finland": {
+          "n": 9,
+          "slope": -23.264013,
+          "standard_error": 18.758735,
+          "t": -1.24017
+        },
+        "Greece": {
+          "n": 9,
+          "slope": -27.731982,
+          "standard_error": 19.577149,
+          "t": -1.416549
+        },
+        "Spain": {
+          "n": 9,
+          "slope": -20.061146,
+          "standard_error": 19.317097,
+          "t": -1.038518
+        },
+        "Sweden": {
+          "n": 9,
+          "slope": -22.589324,
+          "standard_error": 19.187169,
+          "t": -1.177314
+        },
+        "Taiwan": {
+          "n": 9,
+          "slope": -23.115703,
+          "standard_error": 18.91763,
+          "t": -1.221913
+        },
+        "Uganda": {
+          "n": 9,
+          "slope": 43.012667,
+          "standard_error": 34.198093,
+          "t": 1.25775
+        }
+      }
+    }
+  }
+}
