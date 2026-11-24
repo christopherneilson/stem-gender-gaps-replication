@@ -15,6 +15,10 @@ from __future__ import annotations
 import csv, math, collections, re
 from pathlib import Path
 
+# Printed setting names. The harmonized data keep the key "China"; the table
+# prints the coauthors' neutral label for the Ningxia data (November 2026).
+DISPLAY = {"China": "Mainland China"}
+
 
 def tex_num(x, spec):
     """Format a number for a LaTeX table cell with a real minus sign.
@@ -126,7 +130,7 @@ def main():
     for country, pipeline, choice, assign in rows:
         stem = choice["STEM"]
         lines.append(
-            f"{country} & {fmt(pipeline)} & {fmt(stem)} & {fmt(choice['Health'])} & "
+            f"{DISPLAY.get(country, country)} & {fmt(pipeline)} & {fmt(stem)} & {fmt(choice['Health'])} & "
             f"{fmt(choice['Business/Law'])} & & {fmt(assign['STEM'])} & "
             f"{logistic(stem):.2f} \\\\"
         )

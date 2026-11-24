@@ -69,9 +69,17 @@ C = dict(NEUTRALS, **PALETTES["Teal and coral"])
 
 W_DOUBLE, H_BAR, ROW_H = 190.0, 74.0, 5.6
 
+# Display names. The panel CSVs keep the harmonized setting keys and load()
+# swaps in the label a figure prints. The Ningxia data are labelled "Mainland
+# China", the neutral term the coauthors asked for where the setting sits
+# beside Taiwan (November 2026).
+DISPLAY = {"China": "Mainland China",
+           "China (Ningxia)": "Mainland China (Ningxia)"}
+
 # The one order every exhibit uses (editor comment 8).
-ORDER = ["Taiwan", "Chile", "Brazil", "China", "Uganda", "Finland", "Spain",
-         "Australia", "Greece", "Sweden"]
+ORDER = [DISPLAY.get(c, c) for c in
+         ("Taiwan", "Chile", "Brazil", "China", "Uganda", "Finland", "Spain",
+          "Australia", "Greece", "Sweden")]
 
 
 # ------------------------------------------------------------- svg helpers
@@ -99,6 +107,21 @@ def text(x, y, s, size=None, fill=None, anchor=None, weight=None, rotate=None,
     if rotate:
         a.append(f'transform="rotate({rotate} {r3(x)} {r3(y)})"')
     return f'<text {" ".join(a)}>{body}</text>'
+
+
+def tick_label(x, y, name, **kw) -> str:
+    """A setting name centred under its band, on two lines if it has two words.
+
+    Ten bands across the text width leave about 15mm each, and "Mainland
+    China" is 20mm at the tick size, so it would run into "Uganda" beside it.
+    The second line sits inside the bottom margin, above the axis title.
+    """
+    words = str(name).split()
+    if len(words) < 2:
+        return text(x, y, name, anchor="middle", **kw)
+    return (text(x, y, words[0], anchor="middle", **kw)
+            + text(x, y + SZ["tick"] * 1.1, " ".join(words[1:]),
+                   anchor="middle", **kw))
 
 
 def _rich_text(x, y, markup, size, fill, anchor, rotate) -> str:
@@ -291,11 +314,12 @@ def axes(g, ticks, y_title, fmt, show_y=True):
 
 # ------------------------------------------------------------------ panels
 def dumbbell_panel(p, rows, W, H):
-    # Margins are tight on both sides: the longest country label ends ~4mm from
-    # the left edge, and the change column sits right of the axis with the same
-    # ~4mm clear on the right, so the canvas centres on its ink. Figure 1 passes
-    # a reduced W so the plot area itself keeps its width.
-    lab_x, x0, x1, mT = 15.0, 19.0, W - 22.0, 13.0
+    # Margins are tight on both sides: the longest setting label ("Mainland
+    # China") starts ~4mm from the left edge, and the change column sits right
+    # of the axis with the same ~4mm clear on the right, so the canvas centres
+    # on its ink. Figure 1 passes a reduced W so the plot area itself keeps its
+    # width.
+    lab_x, x0, x1, mT = 24.0, 28.0, W - 22.0, 13.0
     d_col = W - 4.0
     x_min, x_max = p["x"]["min"], p["x"]["max"]
 
@@ -494,7 +518,13 @@ def decomp_panel(p, rows, W, H):
     pts = sorted(((sx(r.xn), sy(r.v), r.s, r.xn) for r in rows.itertuples()),
                  key=lambda q: q[0])
     for cx, cy, name, xn in pts:
-        s += text(cx + 2.0, cy + SZ["small"] * 0.36, name, size=SZ["small"])
+        if name == DISPLAY["China"]:
+            # Set to the right, the long name runs into the "75% male" contour
+            # label just above it; the space under the point is clear.
+            s += text(cx, cy + SZ["small"] + 1.6, name, size=SZ["small"],
+                      anchor="middle")
+        else:
+            s += text(cx + 2.0, cy + SZ["small"] * 0.36, name, size=SZ["small"])
         s += circle(cx, cy, 1.15, C["neg"] if xn >= 0 else C["male"],
                     "#FFFFFF", 0.3)
     s += text(g["x0"] + 1, g["y0"] - 1.6, "pipeline favors women",
@@ -556,8 +586,8 @@ def funnel_panel(p, rows, W, H):
                       sy(ys[k]), pt=0.6, stroke=C["faint"])
         for k, st in enumerate(p["stages"]):
             s += marker(st[2], base + offs[k], sy(ys[k]), st[3], st[4])
-        s += text(base, g["y0"] + SZ["tick"] + 1.6, cat, anchor="middle",
-                  size=SZ["tick"], fill=C["tick"])
+        s += tick_label(base, g["y0"] + SZ["tick"] + 1.6, cat,
+                        size=SZ["tick"], fill=C["tick"])
     lx = g["x0"]
     for st in p["stages"]:
         s += marker(st[2], lx + 1.1, 4.2, st[3], st[4])
@@ -631,9 +661,9 @@ def bar_panel(p, rows, W, H):
                           anchor="middle", size=SZ["small"], fill="#FFFFFF")
                 s += text(cx, g["y0"] + SZ["small"] + 0.9, short,
                           anchor="middle", size=SZ["small"], fill=C["soft"])
-            s += text(g["x0"] + band * (i + 0.5),
-                      g["y0"] + SZ["small"] + SZ["tick"] + 1.9, cat,
-                      anchor="middle", size=SZ["tick"])
+            s += tick_label(g["x0"] + band * (i + 0.5),
+                            g["y0"] + SZ["small"] + SZ["tick"] + 1.9, cat,
+                            size=SZ["tick"])
         s += legend_swatch(g["x0"], 4.6, C["female"], "female", SZ["small"])
         s += legend_swatch(g["x0"] + 16, 4.6, C["male"], "male", SZ["small"])
     else:
@@ -661,8 +691,8 @@ def bar_panel(p, rows, W, H):
                 zero = sy(max(y_min, min(y_max, 0)))
                 s += text(g["x0"] + band * (i + 0.5), zero - 1.2, "n/a",
                           anchor="middle", size=SZ["small"], fill=C["soft"])
-            s += text(g["x0"] + band * (i + 0.5), g["y0"] + SZ["tick"] + 1.6,
-                      cat, anchor="middle", size=SZ["tick"])
+            s += tick_label(g["x0"] + band * (i + 0.5), g["y0"] + SZ["tick"] + 1.6,
+                            cat, size=SZ["tick"])
         if len(sers) > 1:
             lx = g["x0"]
             for ser in sers:
@@ -985,6 +1015,9 @@ def load(name: str) -> pd.DataFrame:
     # setting name in series, the reverse of the categorical panels.
     if "xn" not in df.columns and pd.api.types.is_numeric_dtype(df["x"]):
         df["xn"] = df["x"].astype(float)
+    for col in ("x", "s"):
+        if col in df.columns and not pd.api.types.is_numeric_dtype(df[col]):
+            df[col] = df[col].replace(DISPLAY)
     return df
 
 
@@ -1050,8 +1083,9 @@ def embed_fonts(path: Path) -> None:
 def figure1() -> str:
     # W_DOUBLE minus the 13mm of dead left margin and 12mm of gutter the panel
     # no longer reserves, so the plot area is unchanged while the change column
-    # sits 12mm closer to the axis and the canvas hugs its ink.
-    W, H = W_DOUBLE - 25.0, 83.0
+    # sits 12mm closer to the axis and the canvas hugs its ink. The 9mm added
+    # back is the label column's growth for "Mainland China".
+    W, H = W_DOUBLE - 16.0, 83.0
     p = {"chart": "dumbbell",
          "xTitle": "Women as a share of everyone who ranks a STEM program first (%)",
          "pairs": [["top 10% of scorers", "top 10% of scorers"],
@@ -1089,7 +1123,7 @@ def figure3() -> str:
 
 def figure4() -> str:
     W, H = W_DOUBLE, 88.0
-    p = {"chart": "funnel", "xTitle": "Country",
+    p = {"chart": "funnel", "xTitle": "Setting",
          "yTitle": "Female share within each group (%)",
          "stages": [["In top 10%", "in top 10%", "diamond", "#FFFFFF", "#2A6F6B"],
                     ["Ranked STEM anywhere", "ranked STEM anywhere", "circle",
@@ -1133,20 +1167,20 @@ BINS = ["1-5", "6", "7", "8", "9", "10"]
 
 def lv(csv, letter, y_title):
     return {"csv": csv, "letter": letter, "chart": "grouped", "yTitle": y_title,
-            "xTitle": "Country", "order": ORDER, "seriesOrder": ["male", "female"],
+            "xTitle": "Setting", "order": ORDER, "seriesOrder": ["male", "female"],
             "y": LEVELS, "ref": []}
 
 
 def gp(csv, letter):
     return {"csv": csv, "letter": letter, "chart": "single", "yTitle": YT["gapPP"],
-            "xTitle": "Country", "order": ORDER,
+            "xTitle": "Setting", "order": ORDER,
             "seriesOrder": ["female minus male"], "y": GAPS,
             "ref": [{"at": 0, "label": "no gender gap"}]}
 
 
 def st(csv, letter):
     return {"csv": csv, "letter": letter, "chart": "stacked",
-            "yTitle": YT["shares"], "xTitle": "Country", "order": ORDER,
+            "yTitle": YT["shares"], "xTitle": "Setting", "order": ORDER,
             "y": LEVELS, "ref": [{"at": 50, "label": "parity"}]}
 
 
@@ -1221,7 +1255,7 @@ APPENDIX = {
     # looking at three adjacent bars, not by tracking a country down a column.
     "figB8_thresholds": lambda: stack_panels(
         [{"csv": "figB8_thresholds", "letter": None, "chart": "grouped",
-          "yTitle": YT["gapPP"], "xTitle": "Country", "order": ORDER,
+          "yTitle": YT["gapPP"], "xTitle": "Setting", "order": ORDER,
           "seriesOrder": ["Top 1%", "Top 5%", "Top 10%"], "y": GAPS,
           "ref": [{"at": 0, "label": "no gender gap"}]}]),
     "figC1_business_first": lambda: stack_panels(
@@ -1269,7 +1303,7 @@ APPENDIX = {
           "ref": [{"at": 0, "label": "no gap"}]}]),
     "figD1_recent_cohort": lambda: stack_panels(
         [{"csv": "figD1", "letter": None, "chart": "grouped",
-          "yTitle": YT["gapPP"], "xTitle": "Country", "order": ORDER,
+          "yTitle": YT["gapPP"], "xTitle": "Setting", "order": ORDER,
           "seriesOrder": ["pipeline gap", "STEM first-choice gap",
                           "any-STEM gap"],
           "y": {"min": None, "max": None, "fmt": "signed"},

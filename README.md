@@ -14,7 +14,7 @@ The individual-level records behind the counts are confidential and are not
 included. [What is not included](#what-is-not-included) says whom to ask for
 each setting.
 
-Version 1.0, built on 2026-11-23 from commit `3d732b9c5e15` of the authors'
+Version 1.1, built on 2026-11-24 from commit `590c6202967e` of the authors'
 working repository.
 
 ## Quick start
@@ -106,13 +106,13 @@ Some settings supplied more than one sample. The paper uses one per setting:
 | Australia (Victoria) | `atar_pooled_2009_2010` | Victorian Tertiary Admissions Centre | 2009–2010 |
 | Brazil | `reply_tables` | SISU platform / ENEM records | 2016 |
 | Chile | `chile_2012_2018` | DEMRE | 2012–2018 |
-| China (Ningxia) | `china_ningxia_2018` | Ningxia Department of Education | 2018 |
+| Mainland China (Ningxia) | `china_ningxia_2018` | Ningxia Department of Education | 2018 |
 | Finland | `main_pooled` | Ministry of Education (HAREK, AMKOREK) | 2016–2020 |
 | Greece | `years_2003_2012` | Ministry of Education | 2003–2012 |
 | Spain | `esp_2020_2024_tables` | Ministry of Universities | 2020–2024 |
 | Sweden | `reply_docx_2017` | Swedish Council for Higher Education | 2017 |
 | Taiwan | `reply_pdf_2010` | Joint Board of College Recruitment Commission | 2010 |
-| Uganda | `reply_docx` | Public University Joint Admissions Board | 2017/18 |
+| Uganda | `reply_docx` | Public Universities Joint Admissions Board | 2017/18 |
 
 Other variants (Australia's single-year and mathematics-plus-English rankings,
 Finland's 2018 cohort and others) back robustness checks and Appendix D, which
@@ -135,9 +135,9 @@ Three caveats the figures carry:
 
 - `07_revision/02_data/gender_wage_gap_10countries_mixed_sources.csv`: the
   gender wage gaps behind Figure 5's wage-parity axis, with source and URL for
-  each country.
+  each setting.
 - `05_data/wef_gender_gap_2025_sample.csv`: the World Economic Forum's 2025
-  Global Gender Gap index for the ten countries. The Figure 5 script reads it,
+  Global Gender Gap index for the ten settings. The Figure 5 script reads it,
   but no exhibit plots it.
 - `figure_inputs_top10_summary.csv` in `master/`: the top-10% summary the Figure
   5 script reads.
@@ -147,9 +147,9 @@ Three caveats the figures carry:
 - **The individual-level administrative records.** They were obtained under
   separate agreements with each agency in the table above and cannot be
   redistributed. Researchers seeking access should apply to that agency.
-- **The code that turned those records into the counts.** Each country team
-  ran its own extraction on its own data; that code is not part of this
-  package.
+- **The code that turned those records into the counts.** Each setting's
+  research team ran its own extraction on its own data; that code is not part
+  of this package.
 - **The paper's text and the hand-written tables** (A.I, A.III).
 
 ## License and citation

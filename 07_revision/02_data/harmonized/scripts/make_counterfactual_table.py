@@ -24,6 +24,10 @@ import collections
 import csv
 from pathlib import Path
 
+# Printed setting names. The harmonized data keep the key "China"; the table
+# prints the coauthors' neutral label for the Ningxia data (November 2026).
+DISPLAY = {"China": "Mainland China"}
+
 
 def tex_num(x, spec):
     """Format a number for a LaTeX table cell with a real minus sign.
@@ -111,7 +115,7 @@ def main():
     ]
     for country, observed, balanced, common in rows:
         lines.append(
-            f"{country} & {observed:.1f} & {balanced:.1f} & {common:.1f} & "
+            f"{DISPLAY.get(country, country)} & {observed:.1f} & {balanced:.1f} & {common:.1f} & "
             f"{tex_num(balanced - observed, '+.1f')} \\\\"
         )
     lines += [

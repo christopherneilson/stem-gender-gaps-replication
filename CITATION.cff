@@ -3,8 +3,8 @@ message: "If you use these data or code, please cite the paper."
 title: "Replication package for: The Global Gender Gap in STEM Applications: Pipeline vs. Choice"
 type: software
 license: MIT
-version: "1.0"
-date-released: "2026-11-23"
+version: "1.1"
+date-released: "2026-11-24"
 authors:
   - {family-names: Ahimbisibwe, given-names: Isaac}
   - {family-names: Altmejd, given-names: Adam}

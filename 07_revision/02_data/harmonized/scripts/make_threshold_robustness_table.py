@@ -23,6 +23,10 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
+# Printed setting names. The harmonized data keep the key "China"; the table
+# prints the coauthors' neutral label for the Ningxia data (November 2026).
+DISPLAY = {"China": "Mainland China"}
+
 
 def tex_num(x, spec):
     """Format a number for a LaTeX table cell with a real minus sign.
@@ -92,7 +96,7 @@ def main() -> int:
             # Space, not a rule, sets the pooled summary apart from the
             # settings; the italics on Pooled/Range already mark the change.
             end = r" \\[0.5em]" if j == len(names) - 1 else r" \\"
-            lines.append(f"{name} & {row}" + end)
+            lines.append(f"{DISPLAY.get(name, name)} & {row}" + end)
         pool = gaps(pooled, outcome, "__none__")["Pooled"]
         row = " & ".join(tex_num(pool[t], ".1f") for t in THRESHOLDS)
         spread = max(pool.values()) - min(pool.values())
